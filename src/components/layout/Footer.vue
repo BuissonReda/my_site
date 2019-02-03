@@ -10,7 +10,7 @@
 
 <script lang="js">
   export default  {
-    name: 'footer',
+    name: 'myFooter',
     props: [],
     mounted() {
 

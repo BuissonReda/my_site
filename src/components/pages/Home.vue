@@ -1,15 +1,13 @@
 <template>
   <div class="content">
-    <h2 class="my-title">Hi, I'm Buisson Réda 👨</h2>
-    <p class="presentation">I'm a <span class="bold">developer</span> from Toulouse, France. I build 
-    <span class="bold">websites</span>, <span class="bold">mobile apps</span> and create
-      different kind of <a href="https://github.com/BuissonReda" alt="github">projects</a>.
+    <h2 class="my-title">{{ t('hi') }} 👨</h2>
+    <p class="presentation">{{ t('im') }} <span class="bold">{{ t('developer') }}</span> {{ t('from') }} Toulouse, France. {{ t('create') }} 
+    <span class="bold">{{ t('websites') }}</span>, <span class="bold">{{ t('mobile_apps') }}</span> {{ t('and') }} <a href="https://github.com/BuissonReda" alt="github">{{ t('projects') }}</a>.
     </p>
-    <p class="why">I created this site to show my programming career, present the different projects
-      I've made throughout the years, show my programming skills and my workflow. I hope you enjoy it 👨‍💻 
+    <p class="why">{{ t('why') }} 👨‍💻 
     </p>
 
-    <h2 class="my-title">Last projects</h2>
+    <h2 class="my-title">{{ t('last') }}</h2>
     <v-list two-line>
       <template v-for="(item, index) in items">
         <v-subheader

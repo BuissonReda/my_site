@@ -2,56 +2,46 @@
   <section class="article">
     <div class="parallax">
       <v-parallax height="300" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
-        <h1 class="my-title">How to make your own bash commands in MacOS</h1>
-        <h3 class="date">January 15, 2019</h3>
+        <h1 class="my-title">{{ t('b2') }}</h1>
+        <h3 class="date">{{ t('date2') }}</h3>
       </v-parallax>
     </div>
 
     <div class="content">
-      <p>You want to make your own terminal commands? Here, you will learn to do it in two different ways,
-        in pure Bash, and in Node.js, with perks and cons for each way.
-      </p>
-      <h2>In Bash</h2>
-      <p>First, open the file .bash_profile. You can write functions in it and run them 
-        like any other bash commands. For example, write this:</p>
+      <p>{{ t('pres2') }}</p>
+      <h2>{{ t('inBash') }}</h2>
+      <p>{{ t('text2') }}:</p>
       <pre v-highlightjs><code class="bash">{{ sourcecode }}</code></pre>
-      <p class="text">This command first check if there's no argument to it. If this is the case, 
-        it does "cd ..", which make us go back to the previous directoy. Else, 
-        if there's an int as argument, it will do "cd .." as many times as the argument.</p>
-        <p>If you're not familiar with bash syntax, you can check this nice <a href="https://devhints.io/bash">cheatsheets</a>.</p>
-      <p class="text">Save your bash profile, exit the file and run this command:</p>
+      <p class="text">{{ t('anotherText2') }}.</p>
+        <p>{{ t('anotherText3') }} <a href="https://devhints.io/bash">cheatsheets</a>.</p>
+      <p class="text">{{ t('anotherText4') }} :</p>
       <pre v-highlightjs><code class="bash">{{ command }}</code></pre>
-      <p class="text">You're gone to the previous directory, as expected. Now run it with an 
-        argument, for example 3:</p>
+      <p class="text">{{ t('anotherText5') }} :</p>
       <pre v-highlightjs><code class="bash">{{ commandWithArgument }}</code></pre>
-      <p class="text">You're gone to the third previous directory!</p>
+      <p class="text">{{ t('anotherText6') }}</p>
 
-      <h2 class="small-title">In Node.js</h2>
-      <p class="text">In Node.js, we are going to use some third party libraries. Start by installing yarn:</p>
+      <h2 class="small-title">{{ t('inNode') }}</h2>
+      <p class="text">{{ t('anotherText7') }}:</p>
       <pre v-highlightjs><code class="bash">{{ installCommand }}</code></pre>
-      <p class="text">yarn is a package manager for Javascript.</p>
-      <p>Also install ansiweather, that display the current weather conditions in your terminal, with support for ANSI colors and Unicode symbols:</p>
+      <p class="text">{{ t('yarn') }}.</p>
+      <p>{{ t('ansi2') }} :</p>
       <pre v-highlightjs><code class="bash">{{ ansiweatherInstall }}</code></pre>
-      <p class="text">Let's create a project directory and initialize it as a Node.js application:</p>
+      <p class="text">{{ t('anotherText8') }} :</p>
       <pre v-highlightjs><code class="bash">{{ projectCommands }}</code></pre>
-      <p class="text">Now, create a file named commands.js, and write this:</p>
+      <p class="text">{{ t('anotherText9') }} :</p>
       <pre v-highlightjs><code class="bash">{{ commandJS }}</code></pre>
-      <p class="text">The code is so straightforward, it almost doesn't need explanation.
-        With the function "command", we create a command, with parameters inside <CodeHighlight code="<>"></CodeHighlight>.
-        We can add an optional description of the command. Then in the function "action", we can do whatever we want.
-        Here, what i'm doing is an "exec", which will execute a bash command in a temporary shell. 
-        So I'll execute the command that display the weather of a particular city, which is
-        <CodeHighlight code="'ansiweather -l ' + city"></CodeHighlight>. The exec function takes a function as callback,
-          with 3 parameters: error, stdout, and stderr. stdout is the result of the exec, so we'll just display it.
+      <p class="text"> {{ t('anotherText10')}}<CodeHighlight code="<>"></CodeHighlight>.
+        {{ t('text36')}}
+        <CodeHighlight code="'ansiweather -l ' + city"></CodeHighlight>. {{ t('anotherText11')}}
       </p>
-      <p class="text">Save this file, and type:</p>
+      <p class="text">{{ t('save') }} :</p>
       <CodeHighlight code="yarn link"></CodeHighlight>
-      <p class="text">This will create a symlink from commands.js script to <CodeHighlight code="usr/local/bin/commands"></CodeHighlight>,
-         so you will be able to run this script from any folder.</p>
-      <p class="text">Now, type this:</p>
+      <p class="text">{{ t('symlink') }} <CodeHighlight code="usr/local/bin/commands"></CodeHighlight>,
+         {{ t('so') }}.</p>
+      <p class="text">{{ t('nowT') }} :</p>
       <CodeHighlight code="commands showWeather chicago"></CodeHighlight>
-      <p class="text">And you should have the weather in Chicago 🏙️</p>
-      <p class="text">You now know how to create your own bash commands! 🎉</p>
+      <p class="text">{{ t('weather') }} 🏙️</p>
+      <p class="text">{{ t('end2') }} 🎉</p>
     </div>
   </section>
 

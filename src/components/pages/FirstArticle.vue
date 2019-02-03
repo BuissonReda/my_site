@@ -2,25 +2,23 @@
   <section class="article">
     <div class="parallax">
       <v-parallax height="300" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
-        <h1 class="my-title unselectable">How to make navigation transitions in your Vue.js site</h1>
-        <h3 class="date unselectable">January 14, 2019</h3>
+        <h1 class="my-title unselectable">{{ t('first_article_title') }}</h1>
+        <h3 class="date unselectable">{{ t('first_article_date') }}</h3>
       </v-parallax>
     </div>
 
     <div class="content">
-      <p>If you're making a Vue.js site and you want to have sweet transitions when you navigate,
-         you're in the right place 🔥
+      <p>{{ t('first_article_content') }} 🔥
       </p>
-      <p>Go to your App.vue file, and write this template: </p>
+      <p>{{ t('first_article_content_2') }}: </p>
       <pre v-highlightjs><code class="javascript">{{ sourcecode }}</code></pre>
-      <p class="text">Notice the transition component. It's from Vue.js, you don't need a third party library 
-        to use it. More info about it <a href="https://fr.vuejs.org/v2/guide/transitions.html">here</a>.
+      <p class="text">{{ t('first_article_content_3') }} 
+        <a href="https://fr.vuejs.org/v2/guide/transitions.html">{{ t('here') }}</a>.
       </p>
-      <p class="text">In the same file, add this css:</p>
+      <p class="text">{{ t('first_article_content_4') }}:</p>
       <pre v-highlightjs><code class="css">{{ cssSourceCode }}</code></pre>
-      <p class="text">You can of course adjust the length of the transition, or change color, or do anything you 
-        want 🤠 </p>
-      <p>You have now navigation transitions in your Vue.js site! 🎉</p>
+      <p class="text">{{ t('first_article_content_5') }} 🤠 </p>
+      <p>{{ t('first_article_content_6') }}! 🎉</p>
     </div>
   </section>
 

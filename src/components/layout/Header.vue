@@ -2,28 +2,41 @@
   <header class="header">
     <div class="header-left unselectable">
       <router-link class="logo" to="Home">Buisson Réda</router-link>
-      <router-link to="About">About me</router-link>
-      <router-link to="Articles">Articles</router-link>
+      <router-link to="About">{{ t('about') }}</router-link>
+      <router-link to="Articles">{{ t('articles') }}</router-link>
       <span class="emoji" v-if="!isDarkModeEnabled" v-on:click="setDarkMode(true)">☀️</span>
-      <span class="emoji" v-if="isDarkModeEnabled" v-on:click="setDarkMode(false)">🌙</span>
+      <span class="emoji" v-else v-on:click="setDarkMode(false)">🌙</span>
+      <select v-model="languageSelected" class="languages-container" @change="changeLanguage($event)">
+        <option v-for="language in languages" :value="language.value" :label="language.image">
+        </option>
+      </select>
     </div>
   </header>
 </template>
 
 <script lang="js">
   export default  {
-    name: 'header',
+    name: 'myHeader',
     props: [],
     mounted() {
 
     },
     data() {
       return {
+        languageSelected: localStorage.getItem('language'),
+        languages: [{value:"french", image: '🇫🇷'},
+                    {value:"english", image: '🇬🇧'}, 
+                    {value:"spanish", image: '🇪🇸'}]
       }
     },
     methods: {
       setDarkMode(mode) {
         this.$store.commit('switchDesignMode', mode)
+      },
+      changeLanguage(event) {
+        const language = event.target.value
+        this.$translate.setLang(language)
+        localStorage.setItem('language', language)
       }
     },
     computed: {
@@ -44,6 +57,15 @@ $font-title: 'Saira', sans-serif;
   &:hover {
     cursor: pointer;
   }
+}
+
+.languages-container {
+  font-size: 20px;
+  margin-left: 20px;
+  border: 0px;
+
+  &:focus { outline:0; }
+  &:hover { cursor: pointer; }
 }
 
 .light {
@@ -106,7 +128,7 @@ $font-title: 'Saira', sans-serif;
       display: block;
       text-align: left;
     }
-    
+
     .header-right {
       float: none;
     }
@@ -199,10 +221,6 @@ $font-title: 'Saira', sans-serif;
     &:hover {
       cursor: pointer;
     }
-  }
-
-  .moon-emoji {
-
   }
 }
 </style>

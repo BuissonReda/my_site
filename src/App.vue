@@ -1,26 +1,27 @@
 <template>
   <v-app :dark="isDarkModeEnabled ? true : false" id="app" :class="{ dark: isDarkModeEnabled, light: !isDarkModeEnabled }">
-    <Header/>
+    <MyHeader/>
     <vue-progress-bar/>
       <v-content class="content">
         <transition name="fade" mode="out-in">
           <router-view/>
         </transition>
       </v-content>
-    <Footer/>
+    <MyFooter/>
   </v-app>
 </template>
 
 <script>
-import Header from './components/layout/Header'
-import Footer from './components/layout/Footer'
+import MyHeader from './components/layout/Header'
+import MyFooter from './components/layout/Footer'
 
 export default {
   name: 'App',
-  components: { Header, Footer },
+  components: { MyHeader, MyFooter },
   mounted () {
     this.$Progress.finish()
-    this.$translate.setLang('french')
+    const language = localStorage.getItem('language') || 'french'
+    this.$translate.setLang(language)
   },
   created () {
     this.$Progress.start()
@@ -63,11 +64,11 @@ a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 
-  &:hover {
-    color: #2f875f;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
+  // &:hover {
+  //   color: #2f875f;
+  //   -webkit-transition: all 0.5s;
+  //   transition: all 0.5s;
+  // }
 }
 
 .my-title {
@@ -107,5 +108,4 @@ a {
   background-color: #353838;
   color: #e0e1e2;
 }
-
 </style>

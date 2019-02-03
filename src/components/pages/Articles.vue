@@ -1,7 +1,7 @@
 <template lang="html">
 
   <section class="content articles">
-    <h1 class="my-title">Articles</h1>
+    <h1 class="my-title">{{ t('articles') }}</h1>
     <v-list class="articles" two-line>
       <template v-for="(item, index) in articles">
         <v-subheader
