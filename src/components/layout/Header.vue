@@ -97,7 +97,6 @@ $font-title: logoFont, 'Saira', sans-serif;
     font-size: 25px;
     font-family: $font-title;
     font-weight: 800;
-    letter-spacing: 1px;
     margin-right: 100px;
 
     &.active {
