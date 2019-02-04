@@ -73,7 +73,7 @@ const store = new Vuex.Store({
 
 Vue.locales({
   french: {
-    'name': `Buisson Réda`,
+    'name': `Buisson Reda`,
     'hi': 'Salut, je suis',
     'im': 'Je suis un',
     'developer': 'développeur',
@@ -166,7 +166,7 @@ Vue.locales({
     'project1': `Jeu Tangram créé en HTML, CSS et avec la bibliothèque D3.js`
   },
   english: {
-    'name': `Buisson Réda`,
+    'name': `Buisson Reda`,
     'hi': "Hi, I'm",
     'im': 'I am a',
     'developer': 'developer',
@@ -251,7 +251,7 @@ Vue.locales({
     'end2': `You now know how to create your own bash commands!`
   },
   spanish: {
-    'name': `Buissón Réda`,
+    'name': `Buisson Reda`,
     'hi': 'Hola, soy',
     'im': 'Soy un',
     'developer': 'desarrollador',

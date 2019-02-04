@@ -108,4 +108,9 @@ a {
   background-color: #353838;
   color: #e0e1e2;
 }
+
+@font-face {
+  font-family: logoFont;
+  src: url('assets/fonts/AzedoFont/Azedo-Light.otf');
+}
 </style>

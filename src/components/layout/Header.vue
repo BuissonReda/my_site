@@ -52,7 +52,7 @@
 </script>
 
 <style scoped lang="scss">
-$font-title: 'Saira', sans-serif;
+$font-title: logoFont, 'Saira', sans-serif;
 
  .emoji {
   padding-top: 10px !important;
@@ -96,7 +96,8 @@ $font-title: 'Saira', sans-serif;
   .header a.logo {
     font-size: 25px;
     font-family: $font-title;
-    font-weight: 500;
+    font-weight: 800;
+    letter-spacing: 1px;
     margin-right: 100px;
 
     &.active {
