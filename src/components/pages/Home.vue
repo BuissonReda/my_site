@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h2 class="my-title">{{ t('hi') }} 👨</h2>
+    <h2 class="my-title">{{ t('hi') }} {{ t('name') }} 👨</h2>
     <p class="presentation">{{ t('im') }} <span class="bold">{{ t('developer') }}</span> {{ t('from') }} Toulouse, France. {{ t('create') }} 
     <span class="bold">{{ t('websites') }}</span>, <span class="bold">{{ t('mobile_apps') }}</span> {{ t('and') }} <a href="https://github.com/BuissonReda" alt="github">{{ t('projects') }}</a>.
     </p>

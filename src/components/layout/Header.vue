@@ -1,9 +1,9 @@
 <template lang="html">
   <header class="header">
     <div class="header-left unselectable">
-      <router-link class="logo" to="Home">Buisson Réda</router-link>
+      <router-link class="logo" to="Home">{{ t('name') }}</router-link>
       <router-link to="About">{{ t('about') }}</router-link>
-      <router-link to="Articles">{{ t('articles') }}</router-link>
+      <router-link v-bind:class="{ active: isArticlesActive }" to="Articles">{{ t('articles') }}</router-link>
       <span class="emoji" v-if="!isDarkModeEnabled" v-on:click="setDarkMode(true)">☀️</span>
       <span class="emoji" v-else v-on:click="setDarkMode(false)">🌙</span>
       <select v-model="languageSelected" class="languages-container" @change="changeLanguage($event)">
@@ -42,6 +42,10 @@
     computed: {
       isDarkModeEnabled () {
         return this.$store.state.isDarkModeEnabled
+      },
+      isArticlesActive () {
+        const pageName = this.$route.name
+        return pageName === 'FirstArticle' || pageName === 'SecondArticle'
       }
     }
 }
@@ -94,6 +98,16 @@ $font-title: 'Saira', sans-serif;
     font-family: $font-title;
     font-weight: 500;
     margin-right: 100px;
+
+    &.active {
+      background-color: #f1f1f1;
+      color: black;
+    }
+
+    &:hover {
+      background-color: #f1f1f1;
+      color: black !important;
+    }
   }
 
   .header a:hover {
@@ -177,6 +191,16 @@ $font-title: 'Saira', sans-serif;
     font-family: $font-title;
     font-weight: 500;
     margin-right: 100px;
+
+    &.active {
+      background-color: #181919;
+      color: #ddd;
+    }
+
+    &:hover {
+      background-color: #181919 !important;
+      color: #ddd !important;
+    }
   }
 
   .header a:hover {
