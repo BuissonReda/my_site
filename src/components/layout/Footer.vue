@@ -1,7 +1,7 @@
 <template lang="html">
 
   <v-footer class="pa-3 footer">
-    <div>{{ t('lastUpdated') }} 04/2/2019,  11h38</div>
+    <div>{{ t('lastUpdated') }} 04/2/2019, 20h42</div>
     <v-spacer></v-spacer>
     <div class="author">Buisson Réda</div>
     <div>&copy; {{ currentYear }}</div>

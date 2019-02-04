@@ -42,7 +42,7 @@
       </template>
     </v-list>
 
-    <h2 class="my-title">Last articles</h2>
+    <h2 class="my-title">{{ t('lastArticles') }}</h2>
       <v-list two-line>
       <template v-for="(item, index) in articles">
         <v-subheader
@@ -151,6 +151,11 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
+}
+
+.my-title {
+  margin-top: 30px;
+
 }
 
 .presentation {

@@ -30,8 +30,8 @@
       }
     },
     methods: {
-      setDarkMode(mode) {
-        this.$store.commit('switchDesignMode', mode)
+      setDarkMode(isDarkModeActivated) {
+        this.$store.commit('switchDesignMode', isDarkModeActivated)
       },
       changeLanguage(event) {
         const language = event.target.value

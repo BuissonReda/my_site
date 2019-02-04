@@ -49,26 +49,53 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Linotte, 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.bold {
-  font-weight: bold;
+p {
+  font-family: 'Avenir';
 }
 
+.light {
+  .bold {
+    font-weight: 550;
+  }
+
+ p a, .link {
+   color: blue;
+
+    &:hover {
+      color: #13518c;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+  }
+}
+
+.dark {
+  .bold {
+    font-weight: 600;
+  }
+
+  p a, .link {
+    color: #fc8d44;
+
+    &:hover {
+      color: #e6701c;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+  }
+}
+
+
+
 a {
-  color: #42b983;
   text-decoration: none;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-
-  // &:hover {
-  //   color: #2f875f;
-  //   -webkit-transition: all 0.5s;
-  //   transition: all 0.5s;
-  // }
 }
 
 .my-title {
@@ -112,5 +139,10 @@ a {
 @font-face {
   font-family: logoFont;
   src: url('assets/fonts/AzedoFont/Azedo-Light.otf');
+}
+
+@font-face {
+  font-family: Linotte;
+  src: url('assets/fonts/Linotte_Semi_Bold/JCFonts - Linotte SemiBold.otf');
 }
 </style>
