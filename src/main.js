@@ -59,7 +59,8 @@ Vue.directive('highlightjs', {
 
 const store = new Vuex.Store({
   state: {
-    isDarkModeEnabled: false
+    isDarkModeEnabled: false,
+    language: localStorage.getItem('language') || 'french'
   },
   mutations: {
     switchDesignMode(state, mode) {
@@ -67,6 +68,7 @@ const store = new Vuex.Store({
     },
     changeLanguage(state, language) {
       state.language = language
+      localStorage.setItem('language', language)
     }
   }
 })
@@ -163,7 +165,8 @@ Vue.locales({
     'nowT': `Maintenant, tapez ceci`,
     'weather': `Et vous devriez avoir la météo à Chicago`,
     'end2': `Vous savez maintenant comment créer vos propres commandes bash !`,
-    'project1': `Jeu Tangram créé en HTML, CSS et avec la bibliothèque D3.js`
+    'project1': `Jeu Tangram créé en HTML, CSS et avec la bibliothèque D3.js`,
+    'lastUpdated': `Site mise à jour le`
   },
   english: {
     'name': `Buisson Reda`,
@@ -248,7 +251,8 @@ Vue.locales({
     'so': `so you will be able to run this script from any folder`,
     'nowT': `Now, type this`,
     'weather': `And you should have the weather in Chicago`,
-    'end2': `You now know how to create your own bash commands!`
+    'end2': `You now know how to create your own bash commands!`,
+    'lastUpdated': `Site updated on`
   },
   spanish: {
     'name': `Buisson Reda`,
@@ -334,7 +338,8 @@ Vue.locales({
     'so': `Así podrás ejecutar este script desde cualquier carpeta.`,
     'nowT': `Ahora, escriba esto`,
     'weather': `Y deberías tener el clima en Chicago`,
-    'end2': `¡Ahora sabes cómo crear tus propios comandos de bash!`
+    'end2': `¡Ahora sabes cómo crear tus propios comandos de bash!`,
+    'lastUpdated': `Sitio actualizado en`
   }
 })
 

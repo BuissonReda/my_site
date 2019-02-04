@@ -23,7 +23,7 @@
     },
     data() {
       return {
-        languageSelected: localStorage.getItem('language'),
+        languageSelected: this.$store.state.language,
         languages: [{value:"french", image: '🇫🇷'},
                     {value:"english", image: '🇬🇧'}, 
                     {value:"spanish", image: '🇪🇸'}]
@@ -35,8 +35,8 @@
       },
       changeLanguage(event) {
         const language = event.target.value
+        this.$store.commit('changeLanguage', language)
         this.$translate.setLang(language)
-        localStorage.setItem('language', language)
       }
     },
     computed: {
