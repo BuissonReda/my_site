@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy": "cd scripts && node scripts.js deploy && npm install && npm run build",
     "lint": "vue-cli-service lint",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
@@ -29,7 +30,6 @@
     "@vue/cli-plugin-eslint": "^3.1.1",
     "@vue/cli-service": "^3.1.1",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.5.22",
     "vuepress": "^0.14.8"
