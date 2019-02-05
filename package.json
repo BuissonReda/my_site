@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "cd scripts && node scripts.js deploy && cd .. && npm install && npm run build && scp -R dist reda@redabuisson.com:/home/reda/Sites/Buisson_Reda_website",
+    "deploy": "cd scripts && node scripts.js deploy && cd .. && npm install && npm run build && scp -rp dist reda@redabuisson.com:/home/reda/Sites/Buisson_Reda_website",
     "update": "ncu --upgradeAll && npm install && sudo npm i -g npm",
     "clean": "rm -rf node_modules && npm install && npm audit fix && npm doctor",
     "docs:dev": "vuepress dev docs",
