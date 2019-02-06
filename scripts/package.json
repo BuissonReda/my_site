@@ -1,0 +1,14 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "Scripts to handle this website",
+  "main": "index.js",
+  "author": "Réda Buisson",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": "./scripts.js",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "inquirer": "^6.2.1"
+  }
+}
