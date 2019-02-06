@@ -22,6 +22,10 @@
     <h1 class="my-title">{{ t('Photography') }}</h1>
     <p class="photography-text">{{ t('take') }} <a href="https://www.instagram.com/redabuisson/">Instagram</a> 🌇</p>
 
+    <div v-if="isHatimVisible">
+      <img class="hatim-picture" src="../../assets/images/hatimous.jpg" alt="hatim"/>
+    </div>
+
   </section>
 
 </template>
@@ -35,15 +39,25 @@
     },
     data() {
       return {
-
+        isHatimVisible: false
       }
     },
     methods: {
-
+      onkey (event) {
+        if (event.key == "Enter") {
+          this.isHatimVisible = !this.isHatimVisible
+        }
+      }
     },
     computed: {
 
-    }
+    },
+    created: function () {
+      window.addEventListener('keydown', this.onkey)
+    },
+    beforeDestroy: function () {
+      window.removeEventListener('keydown', this.onkey)
+    },
 }
 </script>
 
@@ -96,4 +110,9 @@ ul {
 .content {
   margin: 40px;
 }
+
+.hatim-picture {
+  width: 200px;
+}
+
 </style>
