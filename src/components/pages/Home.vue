@@ -1,11 +1,12 @@
 <template>
   <div class="content">
-    <h2 class="my-title">{{ t('hi') }} {{ t('name') }} 👨</h2>
+    <h2 class="my-title">{{ t('hi') }} <span class="me">{{ t('name') }}</span> 👨</h2>
+    <img class="me-picture" src="../../assets/images/me.jpg" alt="me"/>
     <p class="presentation">{{ t('im') }} <span class="bold">{{ t('developer') }}</span> {{ t('from') }} Toulouse, France. {{ t('create') }} 
-    <span class="bold">{{ t('websites') }}</span>, <span class="bold">{{ t('mobile_apps') }}</span> {{ t('and') }} <a href="https://github.com/BuissonReda" alt="github">{{ t('projects') }}</a>.
+      <span class="bold">{{ t('websites') }}</span>, <span class="bold">{{ t('mobile_apps') }}</span> {{ t('and') }} <a href="https://github.com/BuissonReda" alt="github">{{ t('projects') }}</a>.
     </p>
-    <p class="why">{{ t('why') }} 👨‍💻 
-    </p>
+
+    <p class="why">{{ t('why') }} 👨‍💻 </p>
 
     <h2 class="my-title">{{ t('last') }}</h2>
     <v-list two-line>
@@ -170,5 +171,12 @@ li {
 
 .content {
   margin: 40px;
+}
+
+.me-picture {
+  float: right;
+  width: 100px;
+  margin-top: -70px;
+  border-radius: 5px;
 }
 </style>

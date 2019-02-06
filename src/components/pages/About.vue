@@ -114,5 +114,4 @@ ul {
 .hatim-picture {
   width: 200px;
 }
-
 </style>

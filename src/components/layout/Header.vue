@@ -1,7 +1,9 @@
 <template lang="html">
   <header class="header">
     <div class="header-left unselectable">
-      <router-link class="logo" to="Home">{{ t('name') }}</router-link>
+      <router-link class="logo" to="Home">
+        <span>{{ t('name') }}</span>
+      </router-link>
       <router-link to="About">{{ t('about') }}</router-link>
       <router-link v-bind:class="{ active: isArticlesActive }" to="Articles">{{ t('articles') }}</router-link>
       <span class="emoji" v-if="!isDarkModeEnabled" v-on:click="setDarkMode(true)">☀️</span>
@@ -23,6 +25,7 @@
     },
     data() {
       return {
+        isLogoPhotoVisible: false,
         languageSelected: this.$store.state.language,
         languages: [{value:"french", image: '🇫🇷'},
                     {value:"english", image: '🇬🇧'}, 
@@ -94,6 +97,7 @@ $font-title: logoFont, 'Saira', sans-serif;
   }
 
   .header a.logo {
+    color: #f1f1f1;
     font-size: 25px;
     font-family: $font-title;
     font-weight: 800;
