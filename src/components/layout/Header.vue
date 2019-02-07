@@ -97,7 +97,6 @@ $font-title: logoFont, 'Saira', sans-serif;
   }
 
   .header a.logo {
-    color: #f1f1f1;
     font-size: 25px;
     font-family: $font-title;
     font-weight: 800;
@@ -177,7 +176,7 @@ $font-title: logoFont, 'Saira', sans-serif;
   }
 
   .header a {
-    color: white;
+    color: #ddd;
     text-align: center;
     margin-right: 20px;
     padding: 12px;

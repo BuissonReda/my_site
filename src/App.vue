@@ -1,5 +1,5 @@
 <template>
-  <v-app :dark="isDarkModeEnabled ? true : false" id="app" :class="{ dark: isDarkModeEnabled, light: !isDarkModeEnabled }">
+  <v-app :dark="isDarkModeEnabled ? true : false" id="app" :class="{dark: isDarkModeEnabled, light: !isDarkModeEnabled}">
     <MyHeader/>
     <vue-progress-bar/>
       <v-content class="content">
@@ -89,8 +89,6 @@ p {
     }
   }
 }
-
-
 
 a {
   text-decoration: none;
