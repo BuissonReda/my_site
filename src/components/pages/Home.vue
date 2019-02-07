@@ -156,7 +156,6 @@ li {
 
 .my-title {
   margin-top: 30px;
-
 }
 
 .presentation {

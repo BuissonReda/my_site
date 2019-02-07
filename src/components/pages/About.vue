@@ -19,7 +19,7 @@
     <h1 class="my-title">{{ t('music') }}</h1>
     <p class="music-text">{{ t('flstudio') }} <a href="https://soundcloud.com/r-da-buisson">Soundcloud</a> 🎼</p>
     
-    <h1 class="my-title">{{ t('Photography') }}</h1>
+    <h1 class="my-title">{{ t('photography') }}</h1>
     <p class="photography-text">{{ t('take') }} <a href="https://www.instagram.com/redabuisson/">Instagram</a> 🌇</p>
 
     <div v-if="isHatimVisible">
