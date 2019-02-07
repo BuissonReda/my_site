@@ -2,6 +2,7 @@
 
 const program = require('commander')
 const exec = require('child_process').exec;
+const colors = require('colors');
 
 program
   .version('1.0.0')
@@ -14,7 +15,7 @@ program
     console.log("🍕 git status... 🍕")
     exec(`git st`, function callback(error, stdout, stderr) {
       console.log(stdout)
-      console.info("Done.")
+      console.log("Done.".green)
       console.log("🍕 git commit... 🍕")
       exec(`git commit -a -m "wip 👨‍💻"`, function callback(error, stdout, stderr) {
         console.log(stdout)
