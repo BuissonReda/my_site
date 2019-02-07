@@ -14,7 +14,8 @@ program
     console.log("🍕 git status... 🍕")
     exec(`git st`, function callback(error, stdout, stderr) {
       console.log(stdout)
-      console.log('%c Done.', 'background: #222; color: #bada55');
+      console.log("Done.")
+      console.log("%c Done.", "color:Green");
       console.log("🍕 git commit... 🍕")
       exec(`git commit -a -m "wip 👨‍💻"`, function callback(error, stdout, stderr) {
         console.log(stdout)
