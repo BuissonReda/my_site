@@ -28,7 +28,7 @@
         isLogoPhotoVisible: false,
         languageSelected: this.$store.state.language,
         languages: [{value:"french", image: '🇫🇷'},
-                    {value:"english", image: '🇬🇧'}, 
+                    {value:"english", image: '🇬🇧'},
                     {value:"spanish", image: '🇪🇸'}]
       }
     },

@@ -58,6 +58,8 @@
     "anotherText10": "The code is so straightforward, it almost doesn't need explanation. With the function 'command', we create a command, with parameters inside ",
     "text36": "We can add an optional description of the command. Then in the function 'action', we can do whatever we want. Here, what i'm doing is an 'exec', which will execute a bash command in a temporary shell. So I'll execute the command that display the weather of a particular city, which is",
     "anotherText11": "The exec function takes a function as callback, with 3 parameters: error, stdout, and stderr. stdout is the result of the exec, so we'll just display it.",
+    "anotherText12": "commander.js also gives you the possibility to view all of your scripts. To do this, type:",
+    "anotherText13": "Another advantage of doing commands in node.js is that it is easier to write code in node than in bash, and you will have more flexibility. However, in node, when you execute the function 'exec', you create a temporary shell that will be deleted after the execution of your command, so you can not do for example 'cd directory', it will do this in bash.",
     "save": "Save this file, and type",
     "symlink": "This will create a symlink from commands.js script to",
     "so": "so you will be able to run this script from any folder",

@@ -41,6 +41,9 @@
       <p class="text">{{ t('nowT') }} :</p>
       <CodeHighlight code="commands showWeather chicago"></CodeHighlight>
       <p class="text">{{ t('weather') }} 🏙️</p>
+      <p class="text">{{ t('anotherText12') }}</p>
+      <CodeHighlight code="commands --help"></CodeHighlight>
+      <p class="text">{{ t('anotherText13') }}</p>
       <p class="text">{{ t('end2') }} 🎉</p>
     </div>
   </section>
