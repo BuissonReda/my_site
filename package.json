@@ -24,7 +24,7 @@
     "vue-progressbar": "^0.7.5",
     "vue-router": "^3.0.2",
     "vue-translate-plugin": "^1.2.0",
-    "vuetify": "^1.5.0",
+    "vuetify": "^1.5.1",
     "vuex": "^3.1.0"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
     "babel-eslint": "^10.0.1",
-    "eslint-plugin-vue": "^5.1.0",
+    "eslint-plugin-vue": "^5.2.1",
     "vue-template-compiler": "^2.6.6",
     "vuepress": "^0.14.8"
   },

@@ -59,7 +59,7 @@
     "text36": "Nous pouvons ajouter une description facultative de la commande. Ensuite, dans la fonction 'action', nous pouvons faire ce que nous voulons. Ici, ce que je fais est un 'exec', qui exécutera une commande bash dans un shell temporaire. Donc, je vais exécuter la commande qui affiche la météo d'une ville particulière, qui est",
     "anotherText11": "La fonction exec prend une fonction en tant que rappel, avec 3 paramètres: error, stdout et stderr. stdout est le résultat de l'exec, nous allons donc l'afficher.",
     "anotherText12": "commander.js vous offre aussi la possibilité de visualiser l'ensemble de vos scripts. Pour cela, taper : ",
-    "anotherText13": "Un autre avantage de faire les commandes en node.js est que c'est plus simple d'écrire du code en node qu'en bash, et vous aurez plus de flexibilité. Par contre, en node, lorsque vous executer la fonction 'exec', vous créer un shell temporaire qui sera supprimé après l'exécution de votre commande, donc vous ne pourrez pas faire par exemple de 'cd directory', il faudra faire cela en bash.",
+    "anotherText13": "Un autre avantage de faire les commandes en node.js est que c'est plus simple d'écrire du code en node qu'en bash, et vous aurez plus de flexibilité. Par contre, en node, lorsque vous executez la fonction 'exec', vous créez un shell temporaire qui sera supprimé après l'exécution de votre commande, donc vous ne pourrez pas faire par exemple de 'cd directory', il faudra faire cela en bash.",
     "save": "Enregistrez ce fichier et tapez",
     "symlink": "Cela créera un lien symbolique à partir du script commands.js vers",
     "so": "vous pourrez donc exécuter ce script depuis n'importe quel répertoire",
