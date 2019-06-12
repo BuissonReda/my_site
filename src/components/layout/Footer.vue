@@ -1,7 +1,7 @@
 <template lang="html">
 
   <v-footer class="pa-3 footer">
-    <div>{{ t('lastUpdated') }} 15/2/2019, 12h14</div>
+    <div>{{ t('lastUpdated') }} 11/03/2019, 00h10</div>
     <a href="https://www.facebook.com/reda.buisson" class="fa fa-facebook"></a>
     <a href="https://twitter.com/BuissonRda" class="fa fa-twitter"></a>
     <a href="https://www.linkedin.com/in/r%C3%A9da-buisson-1a042b153/" class="fa fa-linkedin"></a>

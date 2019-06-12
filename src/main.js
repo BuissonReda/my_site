@@ -12,7 +12,6 @@ import VueTranslate from 'vue-translate-plugin'
 import frenchLanguageDatas from './components/translation/french.json'
 import englishLanguageDatas from './components/translation/english.json'
 import spanishLanguageDatas from './components/translation/spanish.json'
-import './assets/css/simpleStyle.css'
 
 const options = {
   color: '#bffaf3',

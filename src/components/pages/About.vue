@@ -23,7 +23,7 @@
     <p class="photography-text">{{ t('take') }} <a href="https://www.instagram.com/redabuisson/">Instagram</a> 🌇</p>
 
     <div v-if="isHatimVisible">
-      <img class="hatim-picture" src="../../assets/images/hatimous.jpg" alt="hatim"/>
+      <img class="hatim-picture" src="../../assets/images/vuejs_logo.png" alt="hatim"/>
     </div>
 
   </section>

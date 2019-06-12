@@ -36,9 +36,8 @@ export default {
     })
     this.$router.afterEach((to, from) => {
       this.$Progress.finish()
-    })
+    })    
   },
-
   computed: {
     isDarkModeEnabled () {
       return this.$store.state.isDarkModeEnabled

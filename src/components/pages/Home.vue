@@ -1,11 +1,9 @@
 <template>
   <div class="content">
     <h2 class="my-title">{{ t('hi') }} <span class="me">{{ t('name') }}</span> 👨</h2>
-    <img class="me-picture" src="../../assets/images/profile_picture.jpg" alt="me"/>
     <p class="presentation">{{ t('im') }} <span class="bold">{{ t('developer') }}</span> {{ t('from') }} Toulouse, France. {{ t('create') }} 
       <span class="bold">{{ t('websites') }}</span>, <span class="bold">{{ t('mobile_apps') }}</span> {{ t('and') }} <a href="https://github.com/BuissonReda" alt="github">{{ t('projects') }}</a>.
     </p>
-
     <p class="why">{{ t('why') }} 👨‍💻 </p>
 
     <h2 class="my-title">{{ t('last') }}</h2>
@@ -109,14 +107,14 @@ export default {
         },
         { divider: true, inset: true },
         {
-          avatar: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Vue.js_Logo.svg',
+          avatar: require('../../assets/images/vuejs_logo.png'),
           title: 'VueJs template',
           subtitle: "VueJs template, with various libraries installed such as vue-axios, vue-router, and a clean layout.",
           link: "https://github.com/BuissonReda/vuejs-template"
         },
         { divider: true, inset: true },
         {
-          avatar: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Vue.js_Logo.svg',
+          avatar: require('../../assets/images/vuejs_logo.png'),
           title: 'PWA template',
           subtitle: "A Progressive Web App template, made with Vue.js and Vuetify.",
           link: "https://github.com/BuissonReda/pwa-template"
@@ -124,19 +122,33 @@ export default {
       ],
       articles: [
         {
-          avatar: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Vue.js_Logo.svg',
+          avatar: require('../../assets/images/vuejs_logo.png'),
           title: 'Vue.js tutorial',
           subtitle: "How to make transitions when navigating in your Vue.js site",
           to: "FirstArticle"
         },
         {
-          avatar: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Vue.js_Logo.svg',
+          avatar: require('../../assets/images/vuejs_logo.png'),
           title: 'Bash & Node.js tutorial',
           subtitle: "How to make your own bash commands in MacOS",
           to: "SecondArticle"
         }
       ]
     }
+  },
+  methods: {
+    playSound (sound) {
+      if (sound) {
+        let audio = new Audio(sound)
+        audio.play()
+      }
+    },
+    playMusic() {
+      this.playSound('../../assets/musics/background_music.mp3')
+    }
+  },
+  mounted () {
+    this.playSound('../../assets/musics/background_music.mp3')
   }
 }
 </script>
@@ -170,12 +182,5 @@ li {
 
 .content {
   margin: 40px;
-}
-
-.me-picture {
-  float: right;
-  width: 100px;
-  margin-top: -70px;
-  border-radius: 5px;
 }
 </style>
