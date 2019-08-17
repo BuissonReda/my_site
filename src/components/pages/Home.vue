@@ -5,77 +5,8 @@
       <span class="bold">{{ t('websites') }}</span>, <span class="bold">{{ t('mobile_apps') }}</span> {{ t('and') }} <a href="https://github.com/BuissonReda" alt="github">{{ t('projects') }}</a>.
     </p>
     <p class="why">{{ t('why') }} 👨‍💻 </p>
-
     <h2 class="my-title">{{ t('last') }}</h2>
-    <v-list two-line>
-      <template v-for="(item, index) in items">
-        <v-subheader
-          v-if="item.header"
-          :key="item.header"
-        >
-          {{ item.header }}
-        </v-subheader>
-
-        <v-divider
-          v-else-if="item.divider"
-          :inset="item.inset"
-          :key="index"
-        ></v-divider>
-
-        <v-list-tile
-          v-else
-          :key="item.title"
-          :href="item.link"
-          avatar
-          @click=""
-        >
-          <v-list-tile-avatar>
-            <img :src="item.avatar">
-          </v-list-tile-avatar>
-
-          <v-list-tile-content>
-            <v-list-tile-title v-html="item.title"></v-list-tile-title>
-            <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </template>
-    </v-list>
-
     <h2 class="my-title">{{ t('lastArticles') }}</h2>
-      <v-list two-line>
-      <template v-for="(item, index) in articles">
-        <v-subheader
-          v-if="item.header"
-          :key="item.header"
-        >
-          {{ item.header }}
-        </v-subheader>
-
-        <v-divider
-          v-else-if="item.divider"
-          :inset="item.inset"
-          :key="index"
-        ></v-divider>
-
-        <v-list-tile
-          v-else
-          :key="item.title"
-          :href="item.link"
-          avatar
-          :to="item.to"
-          @click=""
-        >
-          <v-list-tile-avatar>
-            <img :src="item.avatar">
-          </v-list-tile-avatar>
-
-          <v-list-tile-content>
-            <v-list-tile-title v-html="item.title"></v-list-tile-title>
-            <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </template>
-    </v-list>
   </div>
 </template>
 

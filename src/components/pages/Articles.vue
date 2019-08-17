@@ -2,40 +2,11 @@
 
   <section class="content articles">
     <h1 class="my-title">{{ t('articles') }}</h1>
-    <v-list class="articles" two-line>
-      <template v-for="(item, index) in articles">
-        <v-subheader
-          v-if="item.header"
-          :key="item.header"
-        >
-          {{ item.header }}
-        </v-subheader>
-
-        <v-divider
-          v-else-if="item.divider"
-          :inset="item.inset"
-          :key="index"
-        ></v-divider>
-
-        <v-list-tile
-          v-else
-          :key="item.title"
-          :href="item.link"
-          avatar
-          :to="item.to"
-          @click=""
-        >
-          <v-list-tile-avatar>
-            <img :src="item.avatar">
-          </v-list-tile-avatar>
-
-          <v-list-tile-content>
-            <v-list-tile-title class="articleTitle" v-html="item.title"></v-list-tile-title>
-            <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </template>
-    </v-list>
+    <ul class="articles">
+      <li v-for="(item, index) in articles">
+        <router-link :to="item.to">{{item.title}}</router-link>
+      </li>
+    </ul>
   </section>
 
 </template>

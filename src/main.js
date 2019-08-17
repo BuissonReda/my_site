@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 import router from './router'
 import VueProgressBar from 'vue-progressbar'
 import axios from 'axios'
@@ -29,7 +27,6 @@ const options = {
 
 Vue.use(VueAxios, axios)
 Vue.use(VueProgressBar, options)
-Vue.use(Vuetify)
 Vue.use(Vuex)
 Vue.use(VueTranslate)
 Vue.config.productionTip = false

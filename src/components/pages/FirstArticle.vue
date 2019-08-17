@@ -12,7 +12,7 @@
       </p>
       <p>{{ t('first_article_content_2') }}: </p>
       <pre v-highlightjs><code class="javascript">{{ sourcecode }}</code></pre>
-      <p class="text">{{ t('first_article_content_3') }} 
+      <p class="text">{{ t('first_article_content_3') }}
         <a href="https://fr.vuejs.org/v2/guide/transitions.html">{{ t('here') }}</a>.
       </p>
       <p class="text">{{ t('first_article_content_4') }}:</p>

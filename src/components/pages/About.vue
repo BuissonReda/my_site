@@ -7,11 +7,9 @@
     </div>
     <h1 class="my-title">{{ t('timeline') }}</h1>
     <ul class="timeline">
-      <li><span class="year">{{ t('before') }}</span> - {{ t('dinosaurs') }} 🦖 🦕</li>
       <li><span class="year">1992</span> - {{ t('born') }}</li>
       <li><span class="year">2011</span> - {{ t('bac') }}</li>
       <li><span class="year">2013</span> - {{ t('dut') }}</li>
-      <li><span class="year">2013</span> - {{ t('shootmania') }} <a class="link" href="https://www.youtube.com/watch?v=d4Fyj1mZpM0">{{ t('here') }}</a></li>
       <li><span class="year">2014</span> - {{ t('blagnac') }}</li>
       <li><span class="year">2015</span> - {{ t('job') }}</li>
     </ul>

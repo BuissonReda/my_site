@@ -80,6 +80,7 @@ $font-title: logoFont, 'Saira', sans-serif;
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 20px 10px;
+    padding-left: 0px;
   }
 
   .header a {
@@ -87,6 +88,7 @@ $font-title: logoFont, 'Saira', sans-serif;
     text-align: center;
     margin-right: 20px;
     padding: 12px;
+    padding-left: 43px !important;
     text-decoration: none;
     font-size: 18px; 
     line-height: 25px;
@@ -180,6 +182,7 @@ $font-title: logoFont, 'Saira', sans-serif;
     text-align: center;
     margin-right: 20px;
     padding: 12px;
+    padding-left: 35px !important;
     text-decoration: none;
     font-size: 18px; 
     line-height: 25px;

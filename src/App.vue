@@ -1,14 +1,14 @@
 <template>
-  <v-app :dark="isDarkModeEnabled ? true : false" id="app" :class="{dark: isDarkModeEnabled, light: !isDarkModeEnabled}">
+  <div :dark="isDarkModeEnabled ? true : false" id="app" :class="{dark: isDarkModeEnabled, light: !isDarkModeEnabled}" class="site">
     <MyHeader/>
     <vue-progress-bar/>
-      <v-content class="content">
+      <content class="content">
         <transition name="fade" mode="out-in">
           <router-view/>
         </transition>
-      </v-content>
+      </content>
     <MyFooter/>
-  </v-app>
+  </div>
 </template>
 
 <script>
@@ -36,7 +36,7 @@ export default {
     })
     this.$router.afterEach((to, from) => {
       this.$Progress.finish()
-    })    
+    })
   },
   computed: {
     isDarkModeEnabled () {
@@ -48,10 +48,16 @@ export default {
 
 <style lang="scss">
 #app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
   font-family: Linotte, 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body { margin: 0 !important; }
 
 p {
   font-family: 'Avenir';
@@ -111,13 +117,14 @@ a {
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */      
+  user-select: none;          /* Likely future */
 }
 
 .light {
   .content {
     background-color: white;
     color: #2b2c2d;
+    flex: 1;
   }
 }
 
@@ -125,6 +132,7 @@ a {
   .content {
     background-color: #353838;
     color: #e0e1e2;
+    flex: 1;
   }
 }
 
