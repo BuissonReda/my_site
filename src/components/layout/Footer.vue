@@ -1,7 +1,7 @@
 <template lang="html">
 
   <footer class="footer">
-    <div>{{ t('lastUpdated') }} 17/08/2019, 02h09 🔥</div>
+    <div>{{ t('lastUpdated') }} 11/09/2019, 18h25 🔥</div>
     <div class="author">Buisson Réda 😎</div>
     <div>&copy; {{ currentYear }}</div>
   </footer>

@@ -6,6 +6,7 @@
       </router-link>
       <router-link to="About">{{ t('about') }}</router-link>
       <router-link v-bind:class="{ active: isArticlesActive }" to="Articles">{{ t('articles') }}</router-link>
+      <router-link v-bind:class="{ active: isProjectsActive }" to="Projects">{{ t('projectsHeader') }}</router-link>
       <span class="emoji" v-if="!isDarkModeEnabled" v-on:click="setDarkMode(true)">☀️</span>
       <span class="emoji" v-else v-on:click="setDarkMode(false)">🌙</span>
       <select v-model="languageSelected" class="languages-container" @change="changeLanguage($event)">
@@ -49,6 +50,10 @@
       isArticlesActive () {
         const pageName = this.$route.name
         return pageName === 'FirstArticle' || pageName === 'SecondArticle'
+      },
+      isProjectsActive () {
+        const pageName = this.$route.name
+        return pageName === 'Projects'
       }
     }
 }

@@ -80,6 +80,7 @@
 ul {
   li {
     margin-top: 10px;
+    margin-left: -40px;
   }
 }
 

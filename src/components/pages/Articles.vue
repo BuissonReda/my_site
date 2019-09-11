@@ -4,7 +4,7 @@
     <h1 class="my-title">{{ t('articles') }}</h1>
     <ul class="articles">
       <li v-for="(item, index) in articles">
-        <router-link :to="item.to">{{item.title}}</router-link>
+        <router-link class="link" :to="item.to">{{item.title}}</router-link>
       </li>
     </ul>
   </section>
@@ -58,6 +58,16 @@
   .articleTitle {
     color: black;
   }
+}
+
+li {
+  margin-left: -40px;
+}
+
+.link {
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 </style>
