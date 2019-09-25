@@ -67,5 +67,10 @@
     "nowT": "Ahora, escriba esto",
     "weather": "Y deberías tener el clima en Chicago",
     "end2": "¡Ahora sabes cómo crear tus propios comandos de bash!",
-    "lastUpdated": "Sitio actualizado en"
+    "lastUpdated": "Sitio actualizado en",
+    "tangram": "Juego de Tangram hecho en HTML, CSS y la biblioteca D3.js",
+    "css": "Marco CSS para crear sitios web receptivos con sistema de 12 cuadrículas, botones, colores y varios componentes",
+    "todos": "Una aplicación móvil simple para todos hecha con AngularJs & Ionic. Además, puedes tener amigos y enviar todos a tus amigos",
+    "template": "Plantilla Vue.js, con varias bibliotecas instaladas como vue-axios, vue-router y un diseño limpio",
+    "progressive": "Una plantilla de aplicación web progresiva, hecha con Vue.js y Vuetify"
   }

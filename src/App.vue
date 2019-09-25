@@ -68,11 +68,11 @@ p {
     font-weight: 550;
   }
 
- p a, .link {
-   color: blue;
+  p a, .link {
+    color: #fc8d44;
 
     &:hover {
-      color: #13518c;
+      color: #e6701c;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
     }

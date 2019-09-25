@@ -3,8 +3,15 @@
   <section class="content articles">
     <h1 class="my-title">{{ t('articles') }}</h1>
     <ul class="articles">
-      <li v-for="(item, index) in articles">
-        <router-link class="link" :to="item.to">{{item.title}}</router-link>
+      <li>
+        <router-link class="link" to="FirstArticle">
+          How to make transitions when navigating in your Vue.js site
+        </router-link>
+      </li>
+      <li>
+        <router-link class="link" to="SecondArticle">
+          How to make your own bash commands in MacOS
+        </router-link>
       </li>
     </ul>
   </section>
@@ -20,20 +27,6 @@
     },
     data() {
       return {
-        articles: [
-          {
-            avatar: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Vue.js_Logo.svg',
-            title: 'How to make transitions when navigating in your Vue.js site',
-            subtitle: "14 january 2019",
-            to: "FirstArticle"
-          },
-          {
-            avatar: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Vue.js_Logo.svg',
-            title: 'How to make your own bash commands in MacOS',
-            subtitle: "15 january 2019",
-            to: "SecondArticle"
-          }
-        ]
       }
     },
     methods: {
@@ -56,7 +49,7 @@
 
 .light {
   .articleTitle {
-    color: black;
+    color: rgba(0, 0, 0, 0.7);
   }
 }
 

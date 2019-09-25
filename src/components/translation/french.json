@@ -66,5 +66,10 @@
     "weather": "Et vous devriez avoir la météo à Chicago",
     "end2": "Vous savez maintenant comment créer vos propres commandes bash !",
     "project1": "Jeu Tangram créé en HTML, CSS et avec la bibliothèque D3.js",
-    "lastUpdated": "Site mise à jour le"
+    "lastUpdated": "Site mise à jour le",
+    "tangram": "Jeu du Tangram fait en HTML, CSS et utilisant la librairie D3.js",
+    "css": "Un framework CSS pour créer des sites responsives à l'aide du système à 12 colonnes, des boutons, des couleurs et divers composants",
+    "todos": "Une application mobile simple de todos fait avec AngularJs & Ionic. Vous pouvez également ajouter des amis et envoyer des todos à vos amis",
+    "template": "Template Vue.js, avec divers librairies installées comme vue-axios, vue-router, et une mise en page propre",
+    "progressive": "Un template d'une progressive web app, fait avec Vue.js et Vuetify"
 }

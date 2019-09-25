@@ -67,5 +67,10 @@
     "nowT": "Now, type this",
     "weather": "And you should have the weather in Chicago",
     "end2": "You now know how to create your own bash commands!",
-    "lastUpdated": "Site updated on"
+    "lastUpdated": "Site updated on",
+    "tangram": "Tangram game made in HTML, CSS and the library D3.js",
+    "css": "A CSS Framework for building responsive websites with 12-grids system, buttons, colors, and various components",
+    "todos": "A simple mobile todos application made with AngularJs & Ionic. Additionnaly you can have friends and send todos to your friends",
+    "template": "VueJs template, with various libraries installed such as vue-axios, vue-router, and a clean layout",
+    "progressive": "A Progressive Web App template, made with Vue.js and Vuetify"
 }
